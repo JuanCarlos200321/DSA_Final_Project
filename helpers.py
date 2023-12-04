@@ -1,6 +1,6 @@
 import csv
 
-
+#Class for each food in our database
 class FoodData:
     def __init__(self):
         self.Category = ""
@@ -42,8 +42,9 @@ class FoodData:
         self.Vitamin_E = 0.0
         self.Vitamin_K = 0.0
 
-
+#Read in csv and fill array
 def read_csv_and_populate_map(filename, data_map):
+
     with open(filename, newline='') as file:
         reader = csv.reader(file)
         next(reader)
@@ -93,7 +94,7 @@ def read_csv_and_populate_map(filename, data_map):
 
             data_map.append(x)
 
-
+#Merge Sort algorithm for protein
 def merge_sort_protein(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
@@ -126,6 +127,7 @@ def merge_sort_protein(arr):
             k += 1
 
 
+#Merge Sort algorithm for carbs
 def merge_sort_carb(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
@@ -159,6 +161,7 @@ def merge_sort_carb(arr):
             k += 1
 
 
+#Merge Sort algorithm for Fats
 def merge_sort_fat(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
@@ -190,6 +193,7 @@ def merge_sort_fat(arr):
             k += 1
 
 
+#Per calorie equation return food category used per calorie
 def per_calorie_calc(obj, type):
     total = obj.Protein * 4 + obj.Carbohydrate * 4 + obj.Total_Lipid * 9
 
@@ -208,6 +212,7 @@ def per_calorie_calc(obj, type):
     else:
         return 0
 
+#Partion used for quick sort
 def partition(arr, begin, end, type):
   pivot = begin
   for i in range(begin + 1, end + 1):
@@ -217,6 +222,8 @@ def partition(arr, begin, end, type):
   arr[pivot], arr[begin] = arr[begin], arr[pivot]
   return pivot
 
+
+#Quick Sort Algorithm
 def quicksort( type, arr, begin=0, end=None):
   if end is None:
       end = len(arr) - 1

@@ -1,10 +1,10 @@
-/* Size for brand */
+/* This file is used to design and style the HTML web page
+ features such as the navigation bar and buttons */
+
 nav .navbar-brand
 {
     font-size: xx-large;
 }
-
-/* Colors for brand */
 
 nav .navbar-brand .red
 {
@@ -16,50 +16,54 @@ nav .nav-item .redish
     color: #ff0000;
 }
 
-
 nav .nav-item .black
 {
     color: #000000;
 }
 
-.images{
+.images
+{
   margin-bottom: 5rem;
   text-align: center;
 }
-.order2{
+
+.order2
+{
     margin-bottom: 4rem;
 }
 
-  h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 56px;
-       margin-bottom: 4rem;
+h1
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+    margin-bottom: 4rem;
+}
 
-  }
-
-  .time {
+.time
+{
     color:  #ff0000;
 }
 
-  .btn-secondary{
-      margin-bottom: 4rem;
-  }
-
-  .btn-group-toggle .btn {
-    background-color: black; /* Set your desired background color */
-    color: red; /* Set your desired text color */
-    /* Add any other styles you want to customize */
+.btn-secondary
+{
+    margin-bottom: 4rem;
 }
 
-.btn-group-toggle .btn.active {
-    background-color: black; /* Set your desired background color for the active state */
-    color: red; /* Set your desired text color for the active state */
-
-    /* Add any other styles you want to customize for the active state */
+.btn-group-toggle .btn
+{
+    background-color: black;
+    color: red;
 }
 
-  .form-group {
-    max-width: 500px; /* Set your desired max-width */
-    margin: 0 auto; /* Center the container */
+.btn-group-toggle .btn.active
+{
+    background-color: black;
+    color: red;
+}
+
+.form-group
+{
+    max-width: 500px;
+    margin: 0 auto;
       margin-bottom: 2.5rem;
-  }
+}

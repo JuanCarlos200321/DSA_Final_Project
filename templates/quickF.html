@@ -5,15 +5,15 @@
 {% endblock %}
 
 {% block main %}
+
     <h2>Search Fats By Quick Sort</h2>
 
-      <div class = "images">
+    <div class = "images">
         <img src = " https://www.foodnavigator.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/food-beverage-nutrition/foodnavigator.com/article/2023/03/17/progress-made-in-eliminating-trans-fats-but-5-billion-still-unprotected-who/16259449-2-eng-GB/Progress-made-in-eliminating-trans-fats-but-5-billion-still-unprotected-WHO.jpg" width =700 height =400 alt ="protein pic">
     </div>
 
-
-        <form action="/quickF" method="post">
-         <div class = "form-group">
+    <form action="/quickF" method="post">
+        <div class = "form-group">
             <label for = "order"> Print Order</label>
             <select class = "form-control" id = "order" name = "order">
                 <option value="">Select Order</option>
@@ -22,11 +22,13 @@
                 {% endfor %}
             </select>
         </div>
+
         <div class = "form-group">
             <label for="shares">Size</label>
             <input class = "form-control" id ="list" name ="list" placeholder="Enter Size of List (1 - 7072)" type = "number">
 
         </div>
+
         <button class="btn btn-primary" type="submit">Generate</button>
 
     </form>
