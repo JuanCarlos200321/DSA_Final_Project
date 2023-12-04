@@ -28,9 +28,9 @@ def home():
 
 
         if order == "Low to High":
-            protein = protein
-        if order == "High to Low":
             protein.reverse()
+        if order == "High to Low":
+            protein = protein
 
         flash("Merge Sort took " + str(elapsed_time) + " seconds", "time")
         return render_template("listP.html", protein = protein)
@@ -56,9 +56,9 @@ def mergeC():
             carbohydrates.append(food_data_map[i].Description)
 
         if order == "Low to High":
-            carbohydrates = carbohydrates
-        if order == "High to Low":
             carbohydrates.reverse()
+        if order == "High to Low":
+            carbohydrates = carbohydrates
 
         flash("Merge Sort took " + str(elapsed_time) + " seconds", "time")
         return render_template("listC.html", carbohydrates = carbohydrates)
@@ -86,9 +86,9 @@ def mergeF():
             fats.append(food_data_map[i].Description)
 
         if order == "Low to High":
-            fats = fats
-        if order == "High to Low":
             fats.reverse()
+        if order == "High to Low":
+            fats = fats
 
         flash("Merge Sort took " + str(elapsed_time) + " seconds", "time")
         return render_template("listF.html", fats=fats)
@@ -116,9 +116,9 @@ def quickF():
             fats.append(food_data_map[i].Description)
 
         if order == "Low to High":
-            fats = fats
-        if order == "High to Low":
             fats.reverse()
+        if order == "High to Low":
+            fats = fats
 
         flash("Quick Sort took " + str(elapsed_time) + " seconds", "time")
         return render_template("listF.html", fats=fats)
@@ -144,9 +144,9 @@ def quickC():
             carbohydrates.append(food_data_map[i].Description)
 
         if order == "Low to High":
-            carbohydrates = carbohydrates
-        if order == "High to Low":
             carbohydrates.reverse()
+        if order == "High to Low":
+            carbohydrates = carbohydrates
 
         flash("Quick Sort took " + str(elapsed_time) + " seconds", "time")
         return render_template("listC.html", carbohydrates= carbohydrates)
@@ -172,9 +172,9 @@ def quickP():
             protein.append(food_data_map[i].Description)
 
         if order == "Low to High":
-            protein = protein
-        if order == "High to Low":
             protein.reverse()
+        if order == "High to Low":
+            protein = protein
 
         flash("Quick Sort took " + str(elapsed_time) + " seconds", "time")
         return render_template("listP.html", protein=protein)
