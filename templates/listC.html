@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+
+
+
+<body>
+
+    <h1>Foods With Highest Carbohydrate Value:</h1>
+        {% for i in carbohydrates %}
+            <p>{{ loop.index }}. {{ i }}</p>
+        {% endfor %}
+
+
+</body>
+
+
+
+{% endblock %}

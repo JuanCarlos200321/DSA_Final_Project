@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search For Foods
+{% endblock %}
+
+{% block main %}
+    <h2>Search Carbohydrates By Quick Sort</h2>
+
+      <div class = "images">
+        <img src = "  https://www.challenge22.com/wp-content/uploads/2018/02/פחמימות-2.jpg" width =700 height =400 alt ="protein pic">
+    </div>
+
+
+
+        <form action="/quickC" method="post">
+        <div class = "form-group">
+            <label for = "order"> Print Order</label>
+            <select class = "form-control" id = "order" name = "order">
+                <option value="">Select Order</option>
+                {%for opt in opts %}
+                    <option value= "{{ opt }}"> {{opt}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class = "form-group">
+            <label for="shares">Size</label>
+            <input class = "form-control" id ="list" name ="list" placeholder="Enter Size of List (1 - 7073)" type = "number">
+
+        </div>
+        <button class="btn btn-primary" type="submit">Generate</button>
+
+    </form>
+
+
+{% endblock %}

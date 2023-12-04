@@ -1,0 +1,65 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+
+nav .navbar-brand .red
+{
+    color: #ff0000;
+}
+
+nav .nav-item .redish
+{
+    color: #ff0000;
+}
+
+
+nav .nav-item .black
+{
+    color: #000000;
+}
+
+.images{
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.order2{
+    margin-bottom: 4rem;
+}
+
+  h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 56px;
+       margin-bottom: 4rem;
+
+  }
+
+  .time {
+    color:  #ff0000;
+}
+
+  .btn-secondary{
+      margin-bottom: 4rem;
+  }
+
+  .btn-group-toggle .btn {
+    background-color: black; /* Set your desired background color */
+    color: red; /* Set your desired text color */
+    /* Add any other styles you want to customize */
+}
+
+.btn-group-toggle .btn.active {
+    background-color: black; /* Set your desired background color for the active state */
+    color: red; /* Set your desired text color for the active state */
+
+    /* Add any other styles you want to customize for the active state */
+}
+
+  .form-group {
+    max-width: 500px; /* Set your desired max-width */
+    margin: 0 auto; /* Center the container */
+      margin-bottom: 2.5rem;
+  }

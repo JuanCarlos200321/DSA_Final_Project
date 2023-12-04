@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+
+{% block main %}
+
+
+
+<body>
+
+    <h1>Foods With Highest Protein Value:</h1>
+        {% for i in protein %}
+            <p>{{ loop.index }}. {{ i }}</p>
+        {% endfor %}
+
+
+</body>
+
+
+
+{% endblock %}
